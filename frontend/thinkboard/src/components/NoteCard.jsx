@@ -9,6 +9,7 @@ const NoteCard = ({ note, setNotes }) => {
     const handleDelete = async (e, id) => {
         e.preventDefault();
         try {
+            if (!window.confirm("Are you sure you want to delete this note?")) return;
             await api.delete(`/notes/${id}`);
             setNotes((prev) => prev.filter(note => note._id !== id));
             toast.success("Note deleted successfully");
@@ -22,7 +23,7 @@ const NoteCard = ({ note, setNotes }) => {
                 console.log("Error in handleDelete", error);
                 toast.error("Failed to delete note");
             }
-        } finally { setLoading(false) }
+        }
     };
 
     return <Link to={`/note/${note._id}`}
