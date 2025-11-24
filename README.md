@@ -163,7 +163,8 @@ project-root
 │ ├── tailwind.config.js
 │ └── vite.config.js
 ├── .gitignore
-└── package.json ```
+└── package.json 
+```
 
 ---
 
