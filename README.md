@@ -105,53 +105,65 @@ NODE_ENV="development"
 
 ## 📂 Project Structure
 
+```
 project-root
-assets
-images
-videos
-backend
-src
-config
-db.js
-upstash.js
-controllers
-notesController.js
-middleware
-rateLimiter.js
-models
-Note.js
-routes
-notesRoutes.js
-server.js
-.env
-package.json
-package-lock.json
-frontend
-thinkboard
-dist
-assets
-index-DUTLyb2t.css
-index-eRsRX_16.js
-index.html
-vite.svg
-src
-components
-Navbar.jsx
-NoteCard.jsx
-RateLimitUI.jsx
-lib
-axios.js
-utils.js
-pages
-CreatePage.jsx
-HomePage.jsx
-NoteDetailPage.jsx
-NotesNotFound.jsx
-App.jsx
-index.css
-main.jsx
-package.json
-README.md
+├── assets
+│ ├── images
+│ └── videos
+├── backend
+│ ├── node_modules
+│ ├── src
+│ │ ├── config
+│ │ │ ├── db.js
+│ │ │ └── upstash.js
+│ │ ├── controllers
+│ │ │ └── notesController.js
+│ │ ├── middleware
+│ │ │ └── rateLimiter.js
+│ │ ├── models
+│ │ │ └── Note.js
+│ │ ├── routes
+│ │ │ └── notesRoutes.js
+│ │ └── server.js
+│ ├── .env
+│ ├── package.json
+│ └── package-lock.json
+├── frontend
+│ └── thinkboard
+│ ├── dist
+│ │ ├── assets
+│ │ │ ├── index-DUTLyb2t.css
+│ │ │ └── index-eRsRX_16.js
+│ │ ├── index.html
+│ │ └── vite.svg
+│ ├── node_modules
+│ ├── public
+│ ├── src
+│ │ ├── components
+│ │ │ ├── Navbar.jsx
+│ │ │ ├── NoteCard.jsx
+│ │ │ └── RateLimitUI.jsx
+│ │ ├── lib
+│ │ │ ├── axios.js
+│ │ │ └── utils.js
+│ │ ├── pages
+│ │ │ ├── CreatePage.jsx
+│ │ │ ├── HomePage.jsx
+│ │ │ ├── NoteDetailPage.jsx
+│ │ │ └── NotesNotFound.jsx
+│ │ ├── App.jsx
+│ │ ├── index.css
+│ │ └── main.jsx
+│ ├── eslint.config.js
+│ ├── index.html
+│ ├── package.json
+│ ├── package-lock.json
+│ ├── postcss.config.js
+│ ├── README.md
+│ ├── tailwind.config.js
+│ └── vite.config.js
+├── .gitignore
+└── package.json ```
 
 ---
 
