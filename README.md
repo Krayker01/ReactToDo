@@ -121,7 +121,7 @@ project-root/
 │ │ │ └── rateLimiter.js
 │ │ ├── models/
 │ │ │ └── Note.js
-│ │ ├── routes/ 
+│ │ ├── routes/
 │ │ │ └── notesRoutes.js
 │ │ └── server.js
 │ ├── .env
@@ -160,8 +160,7 @@ project-root/
 │ ├── postcss.config.js
 │ ├── README.md
 │ ├── tailwind.config.js
-│ ├── vite.config.js
-│ └── package-lock.json
+│ └── vite.config.js
 ├── .gitignore
 └── package.json
 
