@@ -2,6 +2,10 @@
 
 **ThinkBoard** is a modern web application for creating and managing notes with a clean interface and built-in rate-limiting. Perfect for quick note-taking and experimenting with frontend and backend development.
 
+## 🌐 Live Website
+
+[![Live Demo](https://img.shields.io/badge/OPEN%20APP-Live%20Website-4CAF50?style=for-the-badge)](https://mern-todo-xl59.onrender.com)
+
 ---
 
 ## 🚀 Demo
