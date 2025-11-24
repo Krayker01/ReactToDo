@@ -4,7 +4,7 @@
 
 ## 🌐 Live Website
 
-[![Open App](https://img.shields.io/badge/OPEN%20APP-▶️%20Click%20to%20Run-blue?style=for-the-badge)](https://mern-todo-xl59.onrender.com)
+[![Open App](https://img.shields.io/badge/OPEN%20APP-%E2%96%B6%EF%B8%8F%20Click%20to%20Run-blue?style=for-the-badge)](https://mern-todo-xl59.onrender.com)
 
 ---
 
