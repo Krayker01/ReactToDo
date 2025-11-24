@@ -43,7 +43,9 @@
 
 1. Clone the repository: 
 
+```
 git https://github.com/Krayker01/MERN-ToDo.git
+```
 
 2. Configure .env
 In the backend folder, create a .env file and add your credentials:
