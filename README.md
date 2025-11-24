@@ -47,11 +47,13 @@ git https://github.com/Krayker01/MERN-ToDo.git
 
 2. Configure .env
 In the backend folder, create a .env file and add your credentials:
+```
 MONGO_URI="mongodb+srv://<username>:<password>@cluster0.mongodb.net/mydatabase?retryWrites=true&w=majority"
 PORT="3000"
 UPSTASH_REDIS_REST_URL="https://<your-upstash-url>.upstash.io"
 UPSTASH_REDIS_REST_TOKEN="<your-upstash-token>"
 NODE_ENV="development"
+```
 
 Where to get these values:
 
@@ -103,7 +105,6 @@ NODE_ENV="development"
 
 ## 📝 Notes
 - Screenshots go in: `frontend/thinkboard/src/assets/images/`  
-- Demo video goes in: `frontend/thinkboard/src/assets/videos/`
 
 ---
 
