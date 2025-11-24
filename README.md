@@ -4,7 +4,7 @@
 
 ## 🌐 Live Website
 
-[![Demo Video](https://img.youtube.com/vi/O5YJcrE2Vi8/maxresdefault.jpg)](https://youtu.be/O5YJcrE2Vi8)
+[![Live Demo](https://img.shields.io/badge/OPEN%20APP-Live%20Website-4CAF50?style=for-the-badge)](https://mern-todo-xl59.onrender.com)
 
 ---
 
