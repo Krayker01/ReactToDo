@@ -7,7 +7,7 @@
 ## 🚀 Demo
 
 ### Video
-[Watch Demo](assets/videos/demo.mp4)  
+[![Thinkboard Demo](https://img.youtube.com/vi/O5YJcrE2Vi8/0.jpg)](https://youtu.be/O5YJcrE2Vi8)
 
 ### Screenshots
 **Homepage**  
