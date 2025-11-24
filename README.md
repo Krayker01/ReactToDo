@@ -89,101 +89,113 @@ Backend is on port 3000
 Make sure .env has:
 NODE_ENV="development"
 
-## 5. Possible Issues
-CORS errors: If the frontend cannot connect to backend on port 3000, make sure backend is running and CORS headers are properly configured.
-MongoDB or Upstash not connecting: Check that the URI and tokens are correctly copied.
+## ⚠️ Possible Issues
+- **CORS errors**:  
+  If the frontend cannot connect to backend on port 3000, make sure backend is running and CORS headers are properly configured.
+- **MongoDB or Upstash not connecting**:  
+  Check that the URI and tokens are correctly copied.
 
-📝 Notes
-Screenshots go in frontend/thinkboard/src/assets/images/
-Demo video goes in frontend/thinkboard/src/assets/videos/
+---
 
-📂 Project Structure
+## 📝 Notes
+- Screenshots go in: `frontend/thinkboard/src/assets/images/`  
+- Demo video goes in: `frontend/thinkboard/src/assets/videos/`
+
+---
+
+## 📂 Project Structure
 
 project-root/
 ├── assets/
-│   ├── images/
-│   └── videos/
-│
+│ ├── images/
+│ └── videos/
 ├── backend/
-│   ├── node_modules/
-│   ├── src/
-│   │   ├── config/
-│   │   │   ├── db.js
-│   │   │   └── upstash.js
-│   │   ├── controllers/
-│   │   │   └── notesController.js
-│   │   ├── middleware/
-│   │   │   └── rateLimiter.js
-│   │   ├── models/
-│   │   │   └── Note.js
-│   │   ├── routes/
-│   │   │   └── notesRoutes.js
-│   │   └── server.js
-│   ├── .env
-│   ├── package.json
-│   └── package-lock.json
-│
+│ ├── node_modules/
+│ ├── src/
+│ │ ├── config/
+│ │ │ ├── db.js
+│ │ │ └── upstash.js
+│ │ ├── controllers/
+│ │ │ └── notesController.js
+│ │ ├── middleware/
+│ │ │ └── rateLimiter.js
+│ │ ├── models/
+│ │ │ └── Note.js
+│ │ ├── routes/
+│ │ │ └── notesRoutes.js
+│ │ └── server.js
+│ ├── .env
+│ ├── package.json
+│ └── package-lock.json
 ├── frontend/
-│   ├── thinkboard/
-│   │   ├── dist/
-│   │   │   ├── assets/
-│   │   │   │   ├── index-DUTLyb2t.css
-│   │   │   │   └── index-eRsRX_16.js
-│   │   │   ├── index.html
-│   │   │   └── vite.svg
-│   │   ├── node_modules/
-│   │   ├── public/
-│   │   ├── src/
-│   │   │   ├── components/
-│   │   │   │   ├── Navbar.jsx
-│   │   │   │   ├── NoteCard.jsx
-│   │   │   │   ├── RateLimitUI.jsx
-│   │   │   ├── lib/
-│   │   │   │   ├── axios.js
-│   │   │   │   └── utils.js
-│   │   │   ├── pages/
-│   │   │   │   ├── CreatePage.jsx
-│   │   │   │   ├── HomePage.jsx
-│   │   │   │   ├── NoteDetailPage.jsx
-│   │   │   │   └── NotesNotFound.jsx
-│   │   │   ├── App.jsx
-│   │   │   ├── index.css
-│   │   │   └── main.jsx
-│   │   ├── eslint.config.js
-│   │   ├── index.html
-│   │   ├── package.json
-│   │   ├── package-lock.json
-│   │   ├── postcss.config.js
-│   │   ├── README.md
-│   │   ├── tailwind.config.js
-│   │   ├── vite.config.js
-│   │   └── package-lock.json
-│
+│ └── thinkboard/
+│ ├── dist/
+│ │ ├── assets/
+│ │ │ ├── index-DUTLyb2t.css
+│ │ │ └── index-eRsRX_16.js
+│ │ ├── index.html
+│ │ └── vite.svg
+│ ├── node_modules/
+│ ├── public/
+│ ├── src/
+│ │ ├── components/
+│ │ │ ├── Navbar.jsx
+│ │ │ ├── NoteCard.jsx
+│ │ │ └── RateLimitUI.jsx
+│ │ ├── lib/
+│ │ │ ├── axios.js
+│ │ │ └── utils.js
+│ │ ├── pages/
+│ │ │ ├── CreatePage.jsx
+│ │ │ ├── HomePage.jsx
+│ │ │ ├── NoteDetailPage.jsx
+│ │ │ └── NotesNotFound.jsx
+│ │ ├── App.jsx
+│ │ ├── index.css
+│ │ └── main.jsx
+│ ├── eslint.config.js
+│ ├── index.html
+│ ├── package.json
+│ ├── package-lock.json
+│ ├── postcss.config.js
+│ ├── README.md
+│ ├── tailwind.config.js
+│ ├── vite.config.js
+│ └── package-lock.json
 ├── .gitignore
 └── package.json
 
-Backend (/backend/src)
-	•	server.js – Entry point of the backend server (Express initialization).
-	•	config/db.js – Database connection configuration.
-	•	config/upstash.js – Upstash Redis client configuration.
-	•	controllers/notesController.js – Core logic for handling note-related requests.
-	•	routes/notesRoutes.js – API routes for notes.
-	•	models/Note.js – Mongoose/Schema model for notes.
-	•	middleware/rateLimiter.js – Rate-limiting middleware to protect API from excessive requests.
+---
 
-⸻
+## ⚙️ Backend (/backend/src)
+- `server.js` – Entry point of the backend server (Express initialization)  
+- `config/db.js` – Database connection configuration  
+- `config/upstash.js` – Upstash Redis client configuration  
+- `controllers/notesController.js` – Core logic for handling note-related requests  
+- `routes/notesRoutes.js` – API routes for notes  
+- `models/Note.js` – Mongoose/Schema model for notes  
+- `middleware/rateLimiter.js` – Rate-limiting middleware to protect API from excessive requests  
 
-Frontend (/frontend/thinkboard/src)
-	•	App.jsx – Main React component defining the app layout and routing.
-	•	main.jsx – Frontend entry point for Vite + React.
-	•	components/Navbar.jsx – Navigation bar component.
-	•	components/NoteCard.jsx – UI component for displaying individual notes.
-	•	components/RateLimitUI.jsx – UI state for handling rate-limit errors.
-	•	pages/HomePage.jsx – Main page listing notes.
-	•	pages/CreatePage.jsx – Page for creating a note.
-	•	pages/NoteDetailPage.jsx – Page showing a single note.
-	•	pages/NotesNotFound.jsx – “Not Found” page for invalid note IDs.
-	•	lib/axios.js – Configured Axios instance for API calls.
-	•	lib/utils.js – Helper utility functions.
-	•	index.css – Global styles.
-	•	index.html – Vite HTML template.
+---
+
+## 🖥️ Frontend (/frontend/thinkboard/src)
+- `App.jsx` – Main React component defining the app layout and routing  
+- `main.jsx` – Frontend entry point for Vite + React  
+
+**Components**
+- `Navbar.jsx` – Navigation bar component  
+- `NoteCard.jsx` – UI component for displaying individual notes  
+- `RateLimitUI.jsx` – UI state for handling rate-limit errors  
+
+**Pages**
+- `HomePage.jsx` – Main page listing notes  
+- `CreatePage.jsx` – Page for creating a note  
+- `NoteDetailPage.jsx` – Page showing a single note  
+- `NotesNotFound.jsx` – “Not Found” page for invalid note IDs  
+
+**Lib**
+- `axios.js` – Configured Axios instance for API calls  
+- `utils.js` – Helper utility functions  
+
+- `index.css` – Global styles  
+- `index.html` – Vite HTML template
