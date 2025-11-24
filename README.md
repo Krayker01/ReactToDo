@@ -121,7 +121,7 @@ project-root/
 │ │ │ └── rateLimiter.js
 │ │ ├── models/
 │ │ │ └── Note.js
-│ │ ├── routes/
+│ │ ├── routes/ 
 │ │ │ └── notesRoutes.js
 │ │ └── server.js
 │ ├── .env
