@@ -74,7 +74,9 @@ Copy the REST URL and access token.
 ## 3. Build and run the project
 
 Build frontend (from project root):
+```
 npm run build
+```
 
 Run backend:
 ```
