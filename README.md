@@ -77,14 +77,18 @@ Build frontend (from project root):
 npm run build
 
 Run backend:
+```
 cd backend
 npm install
 npm run dev
+```
 
 Run frontend:
+```
 cd frontend/thinkboard
 npm install
 npm run dev
+```
 
 Open your browser and go to:
 http://localhost:5173/
